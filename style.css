@@ -7,9 +7,33 @@
 .fundo {
     height: 100%;
     background-image: url('assets/fundo.jpg');
-    /*background-image: linear-gradient(blue, pink);*/
     background-size: cover;
     font-family: sans-serif;
+}
+.barra{
+    background-image: linear-gradient(rgb(248, 248, 79), orange);
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1vh;
+}
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    height: 30px;
+    top: 0;
+    padding-top: 1%;
+}
+.links-nav{
+    display: flex;  
+    justify-content: space-between;
+}
+.item-link-nav:hover{
+    scroll-behavior: smooth;
+    text-decoration: underline;
+    color: yellow;
+    cursor: pointer;
 }
 
 .nav-list {
@@ -17,10 +41,10 @@
     justify-content: space-around;
     align-items: center;
     background-color: black;
-    position: fixed;
+    position: absolute;
     color: white;
     list-style-type: none;
-    top: 0;
+    bottom: 0;
     left: 0;
     right: 0;
     height: 50px;
@@ -28,7 +52,7 @@
 }
 
 .img-menu {
-    width: 40px;
+    width: 2vw;
 }
 
 .img-menu:hover {
@@ -38,33 +62,40 @@
 
 .seg1-perfil {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-top: 10%;
+    margin-left: 10%;
 }
 
 .seg1-titulo {
-    text-align: center;
+    text-align: left;
 }
 
 .seg1-texto {
-    padding-top: 100px;
     display: block;
     color: white;
     width: clamp(10%, 45%, 50%);
     text-align: justify;
 }
-
+.seg1-subtitulo{
+    color: rgb(255, 255, 0);
+    padding-top: 1%;
+}
 .seg2-perfil {
     display: flex;
-    justify-content: center;
+    width: 30%;
+    padding-top: 3%;
+    margin-left: 8.5%;
 }
-
+.link-menu > a{
+    color: yellow;
+}
 .seg2-perfil img {
-    margin-top: 50px;
     margin-inline: auto;
-    width: 100px;
+    width: 50px;
 }
-
+.seg2-imagens:hover{
+    background-color: rgb(245, 255, 101);
+}
 .footer {
     display: flex;
     justify-content: center;
