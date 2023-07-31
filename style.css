@@ -4,12 +4,14 @@
     font-family: 'Roboto', sans-serif;
 }
 
+/*Style Body*/
 .fundo {
     height: 100%;
     background-image: url('assets/fundo.jpg');
     background-size: cover;
     font-family: sans-serif;
 }
+/*Style NavBar*/
 .barra{
     background-image: linear-gradient(rgb(248, 248, 79), orange);
     top: 0;
@@ -57,9 +59,9 @@
 
 .img-menu:hover {
     width: 45px;
-
 }
 
+/*Style Primeiro Segmento*/
 .seg1-perfil {
     display: flex;
     margin-top: 10%;
@@ -82,9 +84,11 @@
 }
 .seg2-perfil {
     display: flex;
-    width: 30%;
-    padding-top: 3%;
-    margin-left: 8.5%;
+    width: 40%;
+    padding-top: 1%;
+    margin-left: 9.5%;
+    margin-bottom: 10%;
+
 }
 .link-menu > a{
     color: yellow;
@@ -96,6 +100,8 @@
 .seg2-imagens:hover{
     background-color: rgb(245, 255, 101);
 }
+
+/*Style Footer*/
 .footer {
     display: flex;
     justify-content: center;
@@ -108,6 +114,27 @@
     bottom: 0;
     width: 100%;
 
+}
+/*Style Primeiro Segmento*/
+.sobre{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-top: 1%;
+    margin-left: 10%;
+    padding-bottom: 10%;
+
+}
+.texto-sobre{
+    max-width: 80%;
+}
+.titulo-sobre{
+    color: yellow;
+    text-align: left;
+}
+.texto-sobre-content{
+    text-align: justify;
+    color: white;
 }
 
 /* Style Contato */
