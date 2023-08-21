@@ -8,55 +8,64 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" type="imagem/png" href="assets/logoz.png">
     <title>Lucas Zoser</title>
 </head>
 
 <body class="fundo">
     <div class="barra"></div>
     <div class="navbar">
-        <div class="item-link-nav"><img style="width: 75px;" src="/assets/zoser-logo.png" alt="logo"></div>
         <div class="item-link-nav">
-            <p>Sobre Mim</p>
+            <a href="index.html"><img style="width: 75px;" src="/assets/zoser-logo.png" alt="logo"></a>
         </div>
         <div class="item-link-nav">
-            <p>Projetos</p>
+            <a class="topnavi" href="#sobre">
+                <p>Sobre Mim</p>
+            </a>
         </div>
         <div class="item-link-nav">
-            <p>Certificações</p>
+            <a class="topnavi" target="_blank" href="/assets/LucasZoserNunesCosta.pdf">
+                <p>Currículo</p>
+            </a>
         </div>
         <div class="item-link-nav">
-            <p>Habilidades</p>
+            <a class="topnavi" href="#projetos">
+                <p>Projetos</p>
+            </a>
+        </div>
+        <div class="item-link-nav">
+            <a class="topnavi" href="#certificados">
+                <p>Certificações</p>
+            </a>
+        </div>
+        <div class="item-link-nav">
+            <a class="topnavi" href="#habilidades">
+                <p>Habilidades</p>
+            </a>
         </div>
     </div>
     <div class="seg1-perfil">
         <div class="seg1-texto">
             <h1 class="seg1-titulo">Lucas Zoser Nunes Costa</h1>
-            <h2 class="seg1-subtitulo">Full Stack Developer</h2>
+
+            <div class="container">
+                <h3 class="text">Full Stack Developer</h3>
+            </div>
+
         </div>
     </div>
 
     <div class="seg2-perfil">
         <div>
-            <img class="seg2-imagens"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-            alt="javascript" />
-            <img class="seg2-imagens" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="typescript" />
-            <img class="seg2-imagens" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
-            <img class="seg2-imagens" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
-            <img class="seg2-imagens" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="c"/>
-            <img class="seg2-imagens" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="cpp"/>
-            <img class="seg2-imagens" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="flutter"/>
-            <img class="seg2-imagens" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="linux"/>        
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg" alt="git" class="seg2-imagens">
-            <img class="seg2-imagens"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" />
-            <img class="seg2-imagens"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
-        
+            <a href="https://www.linkedin.com/in/lucaszoser/" target="_blank"><img class="seg2-imagens"
+                    src="/assets/linkedin.png" alt="linkedin"></a>
+            <a href="https://github.com/Zosin0/" target="_blank"><img class="seg2-imagens" src="/assets/github.png"
+                    alt="github"></a>
+            <a href="contato.html"><img class="seg2-imagens" src="/assets/contato.png" alt="contato"></a>
         </div>
     </div>
 
-    <section class="sobre">
+    <section id="sobre" class="sobre">
         <div class="texto-sobre">
             <h1 class="titulo-sobre">Sobre Mim</h1>
             <h3 class="texto-sobre-content">
@@ -72,6 +81,118 @@
         </div>
     </section>
 
+    <section id="certificados" class="certificados">
+        <div class="conteudo-certs">
+            <h1>Certificados</h1>
+
+            <div class="certs">
+                <div class="cert">
+                    <h5>Udemy - Java COMPLETO 2023 Programação Orientada a Objetos+Projetos</h5>
+                    <h6>55 Horas</h6>
+                </div>
+                <div class="cert">
+                    <h5>Udemy - Python 3 - Curso Completo do Básico ao Avançado</h5>
+                    <h6>26 Horas</h6>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="habilidades" id="habilidades">
+        <h1>Habilidades</h1>
+
+        <div class="habilidades-itens">
+            <div class="hab">
+                <img class="hab-img"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                    alt="javascript" />
+                <h6 class="tit-hab">JavaScript</h6>
+                </div>
+            <div class="hab">
+                <img class="hab-img"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                    alt="typescript" />
+                <h6 class="tit-hab">TypeScript</h6>
+                </div>
+            <div class="hab">
+                <img class="hab-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                    alt="java" />
+                <h6 class="tit-hab">Java</h6>
+                </div>
+            <div class="hab">
+                <img class="hab-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
+                    alt="c" />
+                <h6 class="tit-hab">C</h6>
+                </div>
+            <div class="hab">
+                <img class="hab-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+                    alt="linux" />
+                <h6 class="tit-hab">Linux</h6>
+                </div>
+            <div class="hab">
+                <img class="hab-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg"
+                    alt="git" />
+                <h6 class="tit-hab">Git</h6>
+                </div>
+            <div class="hab">
+                <img class="hab-img"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
+                    alt="angular" />
+                <h6 class="tit-hab">Angular</h6>
+                </div>
+            <div class="hab">
+                <img class="hab-img"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"
+                    alt="mysql" />
+                <h6 class="tit-hab">MySQL</h6>
+                </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="projetos" class="projetos">
+        <div class="texto-projetos">
+            <h1 class="titulo-sobre">Projetos</h1>
+            <div class="klas">
+                <h1>Klas</h1>
+                <h3>Um site que te mantém atualizado sobre cursos na área de tecnologia e ao mesmo tempo te auxilia a
+                    estudar programação de forma mais prática.</h3>
+                <a style="color: yellow; font-size: 18px;" href="https://klas.zoser.com.br/" target="_blank"> Confira o
+                    site!</a><br><br>
+            </div>
+            <div class="gallery">
+                <img src="/assets/klas1.png" alt="klas">
+                <img src="/assets/klas2.png" alt="klas">
+                <img src="/assets/klas3.png" alt="klas">
+                <img src="/assets/klas4.png" alt="klas">
+            </div>
+        </div>
+        <div class="texto-projetos">
+            <div class="studex">
+                <h1>Studex</h1>
+                <h3>Studex é um site que imita a ideia e estilização de uma "Pokedex", fazendo referência ao desenho
+                    Pokémon. Contudo, a proposta é registrar as características e qualidades dos estudantes de Ciência
+                    da Computação do Centro Universitário de Brasília - CEUB. Assim, com algumas perguntas relacionadas
+                    às principais linguagens de programação e sobre atuação no mercado de computação, é possível
+                    conhecer melhor o perfil e capacidades dos alunos, de uma forma descontraída e divertida. </h3>
+                <a style="color: yellow; font-size: 18px;" href="https://studex.zoser.com.br/" target="_blank"> Confira
+                    o site!</a><br><br>
+            </div>
+
+            <div class="gallery">
+                <img src="/assets/studex1.png" alt="studex">
+                <img src="/assets/studex2.png" alt="studex">
+                <img src="/assets/studex3.png" alt="studex">
+                <img src="/assets/studex4.png" alt="studex">
+            </div>
+        </div>
+
+    </section>
+
+
 
     <footer class="footer">
         <div>
@@ -80,7 +201,7 @@
                         Linkedin</a></li>
                 <li class="link-menu"><a href="https://github.com/Zosin0/" target="_blank">
                         Github</a></li>
-                <li class="link-menu"><a href="contato.html" target="_blank">
+                <li class="link-menu"><a href="contato.html">
                         Contato</a></li>
             </ul>
         </div>

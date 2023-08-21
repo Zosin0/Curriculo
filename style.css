@@ -31,6 +31,9 @@
     display: flex;  
     justify-content: space-between;
 }
+.topnavi{
+    color: yellow;
+}
 .item-link-nav:hover{
     scroll-behavior: smooth;
     text-decoration: underline;
@@ -82,13 +85,32 @@
     color: rgb(255, 255, 0);
     padding-top: 1%;
 }
+.container{display: inline-block;}
+.text{
+    color: rgb(255, 255, 0);
+    padding-top: 1%;
+    font-size: 26px;
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+        typing 2s, 
+        cursor .4s step-end infinite alternate;        
+}
+@keyframes cursor {
+    50% { border-color: transparent }
+}
+@keyframes typing {
+    from { width: 0 }
+}
+
 .seg2-perfil {
     display: flex;
     width: 40%;
     padding-top: 1%;
     margin-left: 9.5%;
     margin-bottom: 10%;
-
 }
 .link-menu > a{
     color: yellow;
@@ -98,7 +120,8 @@
     width: 50px;
 }
 .seg2-imagens:hover{
-    background-color: rgb(245, 255, 101);
+    background-color: blue;
+    border-radius: 10px;
 }
 
 /*Style Footer*/
@@ -151,6 +174,128 @@
     padding: 1rem;
     background-image: url('assets/fundo.jpg');
     color: white;
+}
+/*Style Segundo componente*/
+.projetos{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding-top: 1%;
+    margin-left: 10%;
+    padding-bottom: 10%;
+}  
+.texto-projetos{
+    max-width: 80%;
+}
+.klas, .studex{
+    display: flex;
+    flex-direction: column;
+}
+.klas, .studex h1, h3{
+    color: white;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: justify;
+}
+
+.studex{
+    margin-top: 3%;
+}
+.gallery{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.gallery img{
+    aspect-ratio: 3/4;
+    min-width: 0;
+    flex: 1 1 10px;
+    object-fit: cover;
+    opacity: .5;
+    transition: .5s;
+}
+.gallery img:hover{
+    flex: 1 1 100px;
+    opacity: 1;
+}
+
+.certificados{
+    display: flex;
+    justify-content: left;
+    padding-top: 1%;
+    margin-left: 10%;
+    padding-bottom: 10%;
+}
+.conteudo-certs{
+    display: flex;
+    flex-direction: column;
+}
+.certs{
+    display: flex;
+    padding-top: 3%;
+}
+.cert{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1%;
+    margin-right: 3%;
+    align-items: center;
+    width: 160px;
+    height: 160px;
+    background: rgba(255, 255, 0, 0.126);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.1px);
+    -webkit-backdrop-filter: blur(3.1px);
+    border: 1px solid rgba(255, 255, 0, 0.85);
+    position: relative;
+}
+.cert h5{
+    color: rgb(1, 4, 183);
+    text-align: center;
+}
+.cert h6{
+    color: rgb(47, 245, 255);
+}
+
+.conteudo-certs h1{
+    color: yellow;
+    text-align: left;
+}
+
+.habilidades{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding-top: 1%;
+    margin-left: 10%;
+    padding-bottom: 10%;
+}
+
+.habilidades-itens{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    padding-top: 3%;
+
+}
+.habilidades h1{
+    color: yellow;
+    text-align: left;
+}
+
+.hab{
+    width: 70px;
+    background-color: rgb(53, 13, 164);
+    border-radius: 20%;
+    padding: 1%;
+}
+.tit-hab{
+    color: white;
+    text-align: center;
 }
 
 form {
